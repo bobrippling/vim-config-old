@@ -1,0 +1,14 @@
+let g:alternateExtensions_{"m"} = "h"
+let g:alternateExtensions_{"h"} = "c,cpp,m"
+
+set mp=make\ -s
+
+nunmap <leader>x
+nmap <leader>x :r!pbpaste<CR>
+
+"set uc=25 " more likely to crash, save often
+
+autocmd BufRead,BufNewFile pentadactyl.txt set spell ft=mail|%s/ / /eg|norm gg
+
+autocmd FileType objc                   set et ts=4 sw=4
+autocmd FileType objcpp                 set et ts=4 sw=4
