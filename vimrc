@@ -16,6 +16,10 @@ function! Wm()
 	mak
 endfunction
 
+function! SortComma()
+	.!tr ',' '\n' | sort | uniq | perl -e 'print join "", map {chomp; $_} <>'
+endfunction
+
 
 " plugins
 execute pathogen#infect()
