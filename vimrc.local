@@ -11,6 +11,8 @@ let c_space_errors         = 0
 
 set listchars=tab:>-,trail:%
 
+let g:netrw_list_hide .= ',\.js'
+
 "set grepprg=ack\ --nogroup\ -H\ -k
 
 autocmd! BufWritePre
