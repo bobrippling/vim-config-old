@@ -37,3 +37,6 @@
 [submodule "bundle/textobj-word-column.vim"]
 	path = bundle/textobj-word-column.vim
 	url = git://github.com/coderifous/textobj-word-column.vim
+[submodule "bundle/tsuquyomi"]
+	path = bundle/tsuquyomi
+	url = git://github.com/Quramy/tsuquyomi
