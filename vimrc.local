@@ -9,6 +9,12 @@ nmap <leader>x :r!pbpaste<CR>
 "set uc=25 " more likely to crash, save often
 
 autocmd BufRead,BufNewFile pentadactyl.txt set spell ft=mail|%s/ / /eg|norm gg
+"autocmd FileType objc   set et ts=4 sw=4
+"autocmd FileType objcpp set et ts=4 sw=4
 
+" change cpp
+"autocmd FileType cpp    set et ts=4 sw=4
+
+"autocmd BufRead,BufNewFile pentadactyl.txt set spell ft=mail|%s/ / /eg|norm gg
 autocmd FileType objc                   set et ts=4 sw=4
 autocmd FileType objcpp                 set et ts=4 sw=4
