@@ -30,5 +30,14 @@ autocmd FileType objcpp                 set et ts=4 sw=4
 
 autocmd FileType swift                  set et ts=4 sw=4
 
+autocmd BufRead,BufNewFile *.ts    set ft=typescript et ts=4 sw=4 complete=.,w,b,t,u suffixesadd=.ts,.js iskeyword-=: path+=Scripts/
+autocmd BufRead,BufNewFile *.js    set suffixesadd=.js et ts=4 sw=4
+autocmd BufRead,BufNewFile *.d.ts  set noequalalways winfixheight
+autocmd BufRead,BufNewFile *.less  set et ts=4 sw=4
+
 " ctags -f ~/.vim/inc.tags -R /usr/include/
 set tags+=~/.vim/inc.tags
+
+autocmd FileType typescript set tags=./tags,tags
+
+set complete-=t
