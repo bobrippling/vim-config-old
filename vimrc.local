@@ -27,3 +27,6 @@ autocmd BufRead,BufNewFile pentadactyl.txt set spell ft=mail|%s/ / /eg|norm gg
 "autocmd BufRead,BufNewFile pentadactyl.txt set spell ft=mail|%s/ / /eg|norm gg
 autocmd FileType objc                   set et ts=4 sw=4
 autocmd FileType objcpp                 set et ts=4 sw=4
+
+" ctags -f ~/.vim/inc.tags -R /usr/include/
+set tags+=~/.vim/inc.tags
