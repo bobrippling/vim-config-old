@@ -39,5 +39,8 @@ autocmd BufRead,BufNewFile *.less  set et ts=4 sw=4
 set tags+=~/.vim/inc.tags
 
 autocmd FileType typescript set tags=./tags,tags
+autocmd FileType typescript nmap <buffer> <Leader>? :<C-u>echo tsuquyomi#hint()<CR>
+let g:tsuquyomi_disable_quickfix = 1
+
 
 set complete-=t
