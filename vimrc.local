@@ -11,6 +11,8 @@ let c_space_errors         = 0
 
 set listchars=tab:>-,trail:%
 
+"set grepprg=ack\ --nogroup\ -H\ -k
+
 autocmd! BufWritePre
 
 "set uc=25 " more likely to crash, save often

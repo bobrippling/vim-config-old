@@ -111,6 +111,7 @@ set cinoptions=l1,N-s,t0
 
 set splitright splitbelow
 set noequalalways
+"set switchbuf=split " ??????????????????????
 
 set diffopt+=vertical
 
@@ -127,6 +128,10 @@ endif
 let c_space_errors = 1
 let c_no_curly_error = 1
 let c_gnu = 1
+
+" ignore sub-directories (i.e. not current/parent directories)
+" that start with an underscore
+"let g:ctrlp_custom_ignore = '/_.*/.*$'
 
 " file matches
 autocmd FileType c,cpp,slang            set cindent
@@ -261,6 +266,7 @@ set runtimepath+=~/.vim/GIT/ctrlp.vim
 let g:ctrlp_cmd = 'CtrlPCurWD'
 let g:ctrlp_max_depth = 8
 nnoremap g<C-P> :CtrlPTag<CR>
+let g:ctrlp_switch_buffer = ''
 
 let g:buffergator_viewport_split_policy = "B"
 let g:buffergator_sort_regime = "mru"
