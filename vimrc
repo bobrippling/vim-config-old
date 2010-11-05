@@ -199,6 +199,4 @@ nnoremap <C-E>    3<C-E>
 let s:extra = globpath(&rtp, '/extra.vim')
 if filereadable(s:extra)
 	exec 'source ' . s:extra
-else
-	echo "couldn't source " . s:extra
 endif
