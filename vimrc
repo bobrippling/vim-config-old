@@ -74,7 +74,7 @@ nnoremap <leader>m :call Wm()<CR>
 
 syntax on " syntax highlighting
 set nocompatible " prevents vim emulating vi's bugs/limits
-set guioptions=egLtcf
+set guioptions=gtcf
 set number " line numbering
 set nowrap " don't wrap lines
 set sbr=^
