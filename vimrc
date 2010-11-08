@@ -149,14 +149,15 @@ set smartindent " uses c syntax etc to see where to indent to
 
 let c_space_errors = 1
 
-
+let gui_in_tui = 0
 " Display - status line, etc
-"if (&term =~ "-256color")
-"	set t_Co=256
-"else
+if (gui_in_tui > 0 && &term =~ "-256color")
+	set t_Co=256
+	colorscheme molokai
+else
 	let CSApprox_loaded = 1
-"endif
-colorscheme neutral
+	colorscheme neutral
+endif
 " View colours:
 " :runtime syntax/colortest.vim
 
