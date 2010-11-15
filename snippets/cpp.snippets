@@ -27,7 +27,7 @@ snippet class
 		public:
 			$1(${2:arguments});
 			virtual ~$1();
-		
+
 		private:
 			${3:/* data */}
 	};
@@ -36,4 +36,9 @@ snippet for(
 			$2 != $3.end();
 			++$2){
 		(*$2).${4:dosomething()};
+	}
+snippet fo
+	std::vector<${1:int}>::iterator ${2:it};
+	for(${2} = ${3:vec}.begin(); $2 != $3.end(); ++$2){
+		${1} ${4:i} = *${2};
 	}
