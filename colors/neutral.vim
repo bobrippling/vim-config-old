@@ -4,6 +4,9 @@
 " (originally looked at desert Hans Fugal <hans@fugal.net> http://hans.fugal.net/vim/colors/desert.vim (2003/05/06)
 " modified by Rob
 
+" :source $VIMRUNTIME/syntax/hitest.vim
+
+
 set background=dark
 highlight clear
 if version > 580
@@ -12,7 +15,7 @@ if version > 580
 		syntax reset
 	endif
 endif
-let colors_name = "neutral"
+let g:colors_name = "neutral"
 
 " Colours:
 " red green yellow blue magenta cyan white grey with light|dark
@@ -23,7 +26,7 @@ hi	Cursor	guibg=khaki	guifg=slategrey
 hi	VertSplit	guibg=#c2bfa5	guifg=grey40	gui=none	cterm=reverse
 hi	Folded	guibg=black	guifg=grey40	ctermfg=grey	ctermbg=darkgrey
 hi	FoldColumn	guibg=black	guifg=grey20	ctermfg=4	ctermbg=7
-hi	IncSearch	guifg=green	guibg=black	cterm=none	ctermfg=yellow	ctermbg=green
+hi	IncSearch	guifg=green	guibg=black	cterm=none	ctermfg=white	ctermbg=green
 hi	ModeMsg	guifg=goldenrod	cterm=none	ctermfg=brown
 hi	MoreMsg	guifg=SeaGreen	ctermfg=darkgreen
 " V aka /^~$/ outside the buffer
@@ -74,5 +77,9 @@ hi	Error	guifg=White	guibg=Red	cterm=bold	ctermfg=7	ctermbg=1
 hi	SpellErrors	guifg=White	guibg=Red	cterm=bold	ctermfg=7	ctermbg=1
 hi	ColorColumn	guifg=Grey	guibg=Grey	ctermbg=8
 
+hi	Pmenu	ctermfg=0	ctermbg=6
+hi	VertSplit	ctermfg=0	ctermbg=8
+
+" 0 black
 " 1 red  | 2 green | 3 yellow | 4 blue
 " 5 pink | 6 cyan  | 7 white  | 8 grey
