@@ -12,6 +12,10 @@
 " b: () block
 " B: {} block
 " p: paragraph
+"
+" next sentence: )
+" next func:     ]]
+" insert mode: ^t: indent, ^d: unindent
 
 filetype on
 set colorcolumn=
@@ -96,6 +100,7 @@ set ttyfast
 set wildmode=list:longest
 set completeopt+=longest
 set shortmess=filmnrwxtToO
+set nofoldenable
 
 
 "set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\ [HEX=0x%02.2B]\ [POS=%04l/%L,%04v,%p%%]\
@@ -131,9 +136,8 @@ set list
 "  '20 : marks will be remembered for up to X previously edited files
 "  "100 : will save up to X lines for each register
 "  :200 : up to X lines of command-line history will be remembered
-"  % : saves and restores the buffer list
 "  n... : where to save the viminfo files
-set viminfo='20,\"100,:200,%,n~/.viminfo
+set viminfo='20,\"100,/50,:200,n~/.viminfo
 
 set smarttab
 set sw=2 " shiftwidth - >> and << adjustment
