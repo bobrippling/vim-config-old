@@ -37,9 +37,11 @@ if has("autocmd")
 	autocmd BufRead,BufNewFile *.s,asm,nasm set ft=nasm
 	autocmd FileType c,cpp,slang            set cindent
 
+	autocmd FileType c,cpp                  so ~/.vim/omni.vim
+
 	autocmd BufWritePre *                   call TrimSpaces()
 	" binding to turn off ^
-	nnoremap <leader>w :autocmd! BufWritePre<CR>
+	nmap <leader>w :autocmd! BufWritePre<CR>
 
 	" when we reload, tell vim to restore the cursor to the saved position
 	augroup JumpCursorOnEdit
@@ -74,7 +76,7 @@ function! Wm()
 	w
 	mak
 endfunction
-nnoremap <leader>m :call Wm()<CR>
+nmap <leader>m :call Wm()<CR>
 
 syntax on " syntax highlighting
 set nocompatible " prevents vim emulating vi's bugs/limits
@@ -165,16 +167,17 @@ endif
 " View colours:
 " :runtime syntax/colortest.vim
 
+
 " backslash + [tcl etc]
-inoremap <leader>c <Esc>mpa/*<End>*/<Esc>`pl
-nnoremap <leader>t :Tlist<CR>
-nnoremap <leader>l :set list!<CR>
-nnoremap <leader>h :set hls!<CR>
-nnoremap <leader>x :r!xsel -o<CR>
-nnoremap <leader>s s<Space><Esc>pa<Space><Esc>l
-nnoremap <leader>W :set wrap!<CR>
-nnoremap <tab>     >>
-nnoremap <S-tab>   <<
+imap <leader>c <Esc>mpa/*<End>*/<Esc>`pl
+nmap <leader>t :Tlist<CR>
+nmap <leader>l :set list!<CR>
+nmap <leader>h :set hls!<CR>
+nmap <leader>x :r!xsel -o<CR>
+nmap <leader>s s<Space><Esc>pa<Space><Esc>l
+nmap <leader>W :set wrap!<CR>
+nmap <tab>     >>
+nmap <S-tab>   <<
 
 " man page auto ret
 nmap K K<cr>
@@ -190,10 +193,12 @@ nmap K K<cr>
 " move up/down without changing cursor pos
 nnoremap <C-Y>    3<C-Y>
 nnoremap <C-E>    3<C-E>
+inoremap <C-Y>    <Esc>3<C-Y>i
+inoremap <C-E>    <Esc>3<C-E>i
 
 " Side scrolling
-"nnoremap zh 4zh
-"nnoremap zh 4zl
+"nmap zh 4zh
+"nmap zh 4zl
 
 "vmap <C-c> y:call system("xclip -i -selection clipboard", getreg("\""))<CR>:call system("xclip -i", getreg("\""))<CR>
 
