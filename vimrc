@@ -126,6 +126,7 @@ set statusline=\ \%f%m%r%h%w\ ::\ %y[%{&ff}]\%=\ [%02v\ %p%%\ %l/%L]
 "              +-- full path to file in the buffer
 
 " set chars to show
+set encoding=utf-8
 "set listchars=tab:>-,trail:%
 set listchars=tab:»·,trail:·
 "set listchars=trail:·,tab:..
