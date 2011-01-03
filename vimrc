@@ -103,6 +103,7 @@ set wildmode=list:longest
 set completeopt+=longest
 set shortmess=filmnrwxtToO
 set nofoldenable
+set cryptmethod=blowfish
 
 
 "set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\ [HEX=0x%02.2B]\ [POS=%04l/%L,%04v,%p%%]\
@@ -141,9 +142,12 @@ set list
 "  n... : where to save the viminfo files
 set viminfo='20,\"100,/50,:200,n~/.viminfo
 
+set history=200
+
 set smarttab
 set sw=2 " shiftwidth - >> and << adjustment
 set tabstop=2
+set sr " shifts are a multiple of sw
 set nobackup
 set ignorecase " searching
 
@@ -182,6 +186,9 @@ nmap <S-tab>   <<
 " man page auto ret
 nmap K K<cr>
 
+map <leader>T :!ctags -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q .<CR><CR>
+
+
 " custom highlighting
 "highlight MyTagListTagName   guifg=blue ctermfg=blue
 "highlight MyTagListTagName   guifg=blue ctermfg=blue
@@ -197,8 +204,8 @@ inoremap <C-Y>    <Esc>3<C-Y>i
 inoremap <C-E>    <Esc>3<C-E>i
 
 " Side scrolling
-"nmap zh 4zh
-"nmap zh 4zl
+nnoremap zh 8zh
+nnoremap zh 8zl
 
 "vmap <C-c> y:call system("xclip -i -selection clipboard", getreg("\""))<CR>:call system("xclip -i", getreg("\""))<CR>
 

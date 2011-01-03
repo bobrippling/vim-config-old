@@ -1,8 +1,6 @@
 set tags+=~/.vim/omni_tags/cpp
 set tags+=~/.vim/omni_tags/sdl
 
-map <leader>T :!ctags -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q .<CR><CR>
-
 let OmniCpp_NamespaceSearch = 1
 let OmniCpp_GlobalScopeSearch = 1
 let OmniCpp_ShowAccess = 1
