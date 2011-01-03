@@ -1,6 +1,5 @@
 " File:          snipMate.vim
 " Author:        Michael Sanders
-" Last Updated:  July 13, 2009
 " Version:       0.83
 " Description:   snipMate.vim implements some of TextMate's snippets features in
 "                Vim. A snippet is a piece of often-typed text that you can
@@ -18,6 +17,7 @@ if !exists('snips_author') | let snips_author = 'Me' | endif
 
 au BufRead,BufNewFile *.snippets\= set ft=snippet
 au FileType snippet setl noet fdm=indent
+au FileType snippet setl cms="#%s"
 
 let s:snippets = {} | let s:multi_snips = {}
 
@@ -122,24 +122,28 @@ fun s:DefineSnips(dir, aliasft, realft)
 	endfor
 endf
 
-fun! TriggerSnippet()
-	if exists('g:SuperTabMappingForward')
-		if g:SuperTabMappingForward == "<tab>"
-			let SuperTabKey = "\<c-n>"
-		elseif g:SuperTabMappingBackward == "<tab>"
-			let SuperTabKey = "\<c-p>"
+" Takes a single optional argument if you're mapping to somethign OTHER than
+" <Tab>. e.g. inore <silent> <C-]> <C-R>=TriggerSnippet("\<C-]>")
+fun! TriggerSnippet(...)
+	if a:0 == 0
+		if exists('g:SuperTabMappingForward')
+			if g:SuperTabMappingForward == "<tab>"
+				let SuperTabKey = "\<c-n>"
+			elseif g:SuperTabMappingBackward == "<tab>"
+				let SuperTabKey = "\<c-p>"
+			endif
 		endif
 	endif
 
 	if pumvisible() " Update snippet if completion is used, or deal with supertab
-		if exists('SuperTabKey')
+		if a:0 == 0 && exists('SuperTabKey')
 			call feedkeys(SuperTabKey) | return ''
 		endif
 		call feedkeys("\<esc>a", 'n') " Close completion menu
-		call feedkeys("\<tab>") | return ''
+		call feedkeys(a:0 == 0 ? "\<tab>" : a:1) | return ''
 	endif
 
-	if exists('g:snipPos') | return snipMate#jumpTabStop(0) | endif
+	if exists('g:snipPos') | return a:0 ? snipMate#jumpTabStop(a:1) : snipMate#jumpTabStop() | endif
 
 	let word = matchstr(getline('.'), '\S\+\%'.col('.').'c')
 	for scope in [bufnr('%')] + split(&ft, '\.') + ['_']
@@ -148,7 +152,7 @@ fun! TriggerSnippet()
 		" the snippet.
 		if snippet != ''
 			let col = col('.') - len(trigger)
-			sil exe 's/\V'.escape(trigger, '/.').'\%#//'
+			sil exe 's/\V'.escape(trigger, '/').'\%#//'
 			return snipMate#expandSnip(snippet, col)
 		endif
 	endfor
@@ -157,7 +161,7 @@ fun! TriggerSnippet()
 		call feedkeys(SuperTabKey)
 		return ''
 	endif
-	return "\<tab>"
+	return a:0 == 0 ? "\<tab>" : a:1
 endf
 
 fun! BackwardsSnippet()
