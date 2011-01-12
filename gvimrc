@@ -5,7 +5,8 @@ set guioptions=gtcf " already set in .vimrc (need to for 'f')
 " c: console dialogues, f: foreground
 " add m for menu, T for toolbar, r for right scoll bar
 
-colorscheme molokai
+"colorscheme molokai
+colorscheme desert
 
 if has("gui_running")
 	set guifont=profont

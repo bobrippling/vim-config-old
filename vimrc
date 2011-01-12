@@ -35,6 +35,7 @@ if has("autocmd")
 	endfunction
 
 	autocmd BufRead,BufNewFile *.s,asm,nasm set ft=nasm
+	"autocmd BufRead,BufNewFile *.txt        set spell
 	autocmd FileType c,cpp,slang            set cindent
 
 	autocmd FileType c,cpp                  so ~/.vim/omni.vim
@@ -104,6 +105,7 @@ set completeopt+=longest
 set shortmess=filmnrwxtToO
 set nofoldenable
 set cryptmethod=blowfish
+set sidescroll=1
 
 
 "set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\ [HEX=0x%02.2B]\ [POS=%04l/%L,%04v,%p%%]\
@@ -129,7 +131,7 @@ set statusline=\ \%f%m%r%h%w\ ::\ %y[%{&ff}]\%=\ [%02v\ %p%%\ %l/%L]
 " set chars to show
 set encoding=utf-8
 "set listchars=tab:>-,trail:%
-set listchars=tab:»·,trail:·
+set listchars=tab:»·,trail:·,precedes:<,extends:>
 "set listchars=trail:·,tab:..
 "set listchars=trail:·,tab:
 set list
@@ -201,8 +203,7 @@ map <leader>T :!ctags -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q .<CR
 " move up/down without changing cursor pos
 nnoremap <C-Y>    3<C-Y>
 nnoremap <C-E>    3<C-E>
-inoremap <C-Y>    <Esc>3<C-Y>i
-inoremap <C-E>    <Esc>3<C-E>i
+" C-X C-[YE] for insert mode
 
 " Side scrolling
 nnoremap zh 8zh
