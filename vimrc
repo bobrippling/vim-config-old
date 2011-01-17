@@ -42,7 +42,7 @@ if has("autocmd")
 
 	autocmd BufWritePre *                   call TrimSpaces()
 	" binding to turn off ^
-	nmap <leader>w :autocmd! BufWritePre<CR>
+	nmap <leader>W :autocmd! BufWritePre<CR>
 
 	" when we reload, tell vim to restore the cursor to the saved position
 	augroup JumpCursorOnEdit
@@ -182,7 +182,7 @@ nmap <leader>l :set list!<CR>
 nmap <leader>h :set hls!<CR>
 nmap <leader>x :r!xsel -o<CR>
 nmap <leader>s s<Space><Esc>pa<Space><Esc>l
-nmap <leader>W :set wrap!<CR>
+nmap <leader>w :set wrap!<CR>
 nmap <tab>     >>
 nmap <S-tab>   <<
 
