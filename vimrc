@@ -178,13 +178,16 @@ endif
 " backslash + [tcl etc]
 imap <leader>c <Esc>mpa/*<End>*/<Esc>`pl
 nmap <leader>t :Tlist<CR>
-nmap <leader>l :set list!<CR>
-nmap <leader>h :set hls!<CR>
 nmap <leader>x :r!xsel -o<CR>
 nmap <leader>s s<Space><Esc>pa<Space><Esc>l
-nmap <leader>w :set wrap!<CR>
+
 nmap <tab>     >>
 nmap <S-tab>   <<
+
+nmap <leader>l :set list!<CR>
+nmap <leader>h :set hls!<CR>
+nmap <leader>w :set wrap!<CR>
+nmap <leader>n :set nu!<CR>
 
 " man page auto ret
 nmap K K<cr>
