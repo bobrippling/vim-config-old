@@ -10,6 +10,7 @@ syn keyword	cRepeat		while for do
 syn keyword cType int byte ptr void
 syn keyword	cTodo		contained TODO FIXME XXX
 
+syn region	cCppString	start=+L\="+ skip=+\\\\\|\\"\|\\$+ excludenl end=+"+ end='$' contains=cSpecial,cFormat,@Spell
 
 "integer number, or floating point number without a dot and with "f".
 syn case ignore
