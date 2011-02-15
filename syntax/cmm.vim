@@ -2,6 +2,7 @@
 
 syn match Comment /#.*/
 syn match Include /^[<>].*/
+syn match Include /^\^.*/
 
 syn keyword	cStatement	goto break return continue asm
 syn keyword	cLabel		case default
@@ -11,6 +12,9 @@ syn keyword cType int byte ptr void
 syn keyword	cTodo		contained TODO FIXME XXX
 
 syn region	cCppString	start=+L\="+ skip=+\\\\\|\\"\|\\$+ excludenl end=+"+ end='$' contains=cSpecial,cFormat,@Spell
+
+syn match	cCharacter	"L\='[^\\]'"
+syn match	cCharacter	"L'[^']*'" contains=cSpecial
 
 "integer number, or floating point number without a dot and with "f".
 syn case ignore
@@ -68,7 +72,7 @@ hi def link cOperator		Operator
 hi def link cStructure		Structure
 hi def link cStorageClass	StorageClass
 hi def link cInclude		Include
-hi def link cPreProc		PreProc
+"hi def link cPreProc		PreProc
 hi def link cDefine		Macro
 hi def link cIncluded		cString
 hi def link cError		Error
