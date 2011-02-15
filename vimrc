@@ -40,6 +40,8 @@ if has("autocmd")
 
 	autocmd FileType c,cpp                  so ~/.vim/omni.vim
 
+	autocmd BufRead,BufNewFile *.txt        set wrap
+
 	autocmd BufWritePre *                   call TrimSpaces()
 	" binding to turn off ^
 	nmap <leader>W :autocmd! BufWritePre<CR>
