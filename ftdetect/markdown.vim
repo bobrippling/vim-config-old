@@ -1,1 +1,2 @@
-/home/rob/.vim/GIT/vim-markdown/ftdetect/markdown.vim
+" Markdown
+autocmd BufNewFile,BufRead *.{md,mkd,mkdn,mark*} set filetype=markdown
