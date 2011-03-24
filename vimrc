@@ -136,7 +136,9 @@ set encoding=utf-8
 set listchars=tab:»·,trail:·,precedes:<,extends:>
 "set listchars=trail:·,tab:..
 "set listchars=trail:·,tab:
-set list
+set nolist
+" FIXME:
+" display /^\t* \+[^ \t]/
 
 
 
@@ -213,6 +215,9 @@ nnoremap <C-E>    3<C-E>
 " Side scrolling
 nnoremap zh 8zh
 nnoremap zh 8zl
+
+nnoremap ' `
+nnoremap ` '
 
 "vmap <C-c> y:call system("xclip -i -selection clipboard", getreg("\""))<CR>:call system("xclip -i", getreg("\""))<CR>
 
