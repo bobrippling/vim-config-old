@@ -12,8 +12,8 @@ colorscheme asmdev
 if has("gui_running")
 	set guifont=profont
 	"set guifont=ProggyTinyTT:h11:cANSI
-	set lines=50
-	set columns=160
+	set lines=60 " avoid dwm putting us offscreen
+	"set columns=160
 endif
 
 filetype plugin indent on
