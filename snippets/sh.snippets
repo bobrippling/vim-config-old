@@ -28,7 +28,7 @@ snippet case
 	esac
 snippet usage
 	usage(){
-		echo "Usage: ${0:progname} ${1:[OPTNS]} ${2:[FILES...]}"
-		${3:echo rest...}
+		echo "Usage: ${0:progname} ${1:[OPTNS]} ${2:[FILES...]}" >&2
+		${3:echo rest...} >&2
 		exit 1
 	}
