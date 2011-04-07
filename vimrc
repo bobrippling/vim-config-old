@@ -18,7 +18,7 @@
 " insert mode: ^t: indent, ^d: unindent
 
 filetype on
-set colorcolumn=
+"set colorcolumn=
 
 if has("autocmd")
 	filetype indent on
@@ -106,7 +106,7 @@ set wildmode=list:longest
 set completeopt+=longest
 set shortmess=filmnrwxtToO
 set nofoldenable
-set cryptmethod=blowfish
+"set cryptmethod=blowfish
 set sidescroll=1
 
 
