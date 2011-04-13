@@ -31,7 +31,7 @@ if has("autocmd")
 		if line("'Z") != line(".")
 			echo "Stripped whitespace\n"
 		endif
-		normal `Z
+		normal 'Z
 	endfunction
 
 	autocmd BufRead,BufNewFile *.s,asm,nasm set ft=nasm
