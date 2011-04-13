@@ -192,6 +192,7 @@ nmap <leader>l :set list!<CR>
 nmap <leader>h :set hls!<CR>
 nmap <leader>w :set wrap!<CR>
 nmap <leader>n :set nu!<CR>
+nmap <leader>a :vert ball<CR>
 
 " man page auto ret
 nmap K K<cr>
