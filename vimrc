@@ -1,22 +1,3 @@
-" :cn - Goto the next error in source code.
-" :cp - Goto the previous error in source code.
-" ^Wv = split vertically
-"
-" set spell
-" zg = add to dict
-" z= = show list of suggestions
-"
-" [cdv][ai]X
-" where X is one of: {[}]"'wsbBp
-" s: sentence
-" b: () block
-" B: {} block
-" p: paragraph
-"
-" next sentence: )
-" next func:     ]]
-" insert mode: ^t: indent, ^d: unindent
-
 filetype on
 set colorcolumn=
 
@@ -79,9 +60,10 @@ function! Wm()
 	w
 	mak
 endfunction
-nmap <leader>m :call Wm()<CR>
 
 syntax on " syntax highlighting
+set hlsearch
+noh
 set nocompatible " prevents vim emulating vi's bugs/limits
 set guioptions=gtcf
 set number " line numbering
@@ -103,7 +85,7 @@ set scrolloff=5 " buffer zone at top and bottom
 set cmdheight=1
 set ttyfast
 set wildmode=list:longest
-set completeopt+=longest
+set completeopt=menu,longest
 set shortmess=filmnrwxtToO
 set nofoldenable
 set cryptmethod=blowfish
@@ -185,13 +167,17 @@ nmap <leader>t :Tlist<CR>
 nmap <leader>x :r!xsel -o<CR>
 nmap <leader>s s<Space><Esc>pa<Space><Esc>l
 
+nmap <leader>m :call Wm()<CR>
+nmap <leader>n :cn<CR>
+
 nmap <tab>     >>
 nmap <S-tab>   <<
 
 nmap <leader>l :set list!<CR>
-nmap <leader>h :set hls!<CR>
+nmap <leader>H :set hls!<CR>
+nmap <leader>h :noh<CR>
 nmap <leader>w :set wrap!<CR>
-nmap <leader>n :set nu!<CR>
+nmap <leader>N :set nu!<CR>
 nmap <leader>a :vert ball<CR>
 
 " man page auto ret
