@@ -26,14 +26,14 @@ hi	Cursor	guibg=khaki	guifg=slategrey
 hi	VertSplit	guibg=#c2bfa5	guifg=grey40	gui=none	cterm=reverse
 hi	Folded	guibg=black	guifg=grey40	ctermfg=grey	ctermbg=darkgrey
 hi	FoldColumn	guibg=black	guifg=grey20	ctermfg=4	ctermbg=7
-hi	IncSearch	guifg=green	guibg=black	cterm=none	ctermfg=white	ctermbg=green
+hi	IncSearch	guifg=green	guibg=black	cterm=none			ctermbg=white
 hi	ModeMsg	guifg=goldenrod	cterm=none	ctermfg=brown
 hi	MoreMsg	guifg=SeaGreen	ctermfg=darkgreen
 " V aka /^~$/ outside the buffer
 "hi	NonText	guifg=RoyalBlue	guibg=grey15	cterm=bold	ctermfg=blue
 hi	NonText	guifg=#4a4a59	guibg=grey15	cterm=bold	ctermfg=blue
 hi	Question	guifg=springgreen	ctermfg=green
-hi	Search	guibg=peru	guifg=wheat	cterm=none	ctermfg=darkblue	ctermbg=green
+hi	Search	guibg=peru	guifg=wheat	cterm=none	ctermfg=darkblue	ctermbg=white
 " V like the space+tab representations
 "hi	SpecialKey	guifg=yellowgreen	ctermfg=darkgreen	cterm=none
 hi	SpecialKey	guifg=#4a4a59	ctermfg=black	cterm=bold
@@ -68,10 +68,10 @@ hi	Directory	ctermfg=darkcyan
 hi	ErrorMsg	cterm=bold	guifg=White	guibg=Red	cterm=bold	ctermfg=7	ctermbg=1
 hi	VisualNOS	cterm=bold,underline
 hi	WildMenu	ctermfg=0	ctermbg=3
-hi	DiffAdd	ctermbg=4
-hi	DiffChange	ctermbg=5
+hi	DiffAdd	ctermbg=6	ctermfg=0
+hi	DiffChange	ctermbg=8
 hi	DiffDelete	cterm=bold	ctermfg=4	ctermbg=6
-hi	DiffText	cterm=bold	ctermbg=1
+hi	DiffText	cterm=bold	ctermbg=0
 hi	Underlined	cterm=underline	ctermfg=5
 hi	Error	guifg=White	guibg=Red	cterm=bold	ctermfg=7	ctermbg=1
 hi	SpellErrors	guifg=White	guibg=Red	cterm=bold	ctermfg=7	ctermbg=1
