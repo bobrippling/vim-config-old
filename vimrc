@@ -62,8 +62,7 @@ function! Wm()
 endfunction
 
 syntax on " syntax highlighting
-set hlsearch
-noh
+set nohlsearch
 set nocompatible " prevents vim emulating vi's bugs/limits
 set guioptions=gtcf
 set number " line numbering
@@ -174,8 +173,7 @@ nmap <tab>     >>
 nmap <S-tab>   <<
 
 nmap <leader>l :set list!<CR>
-nmap <leader>H :set hls!<CR>
-nmap <leader>h :noh<CR>
+nmap <leader>h :set hls!<CR>
 nmap <leader>w :set wrap!<CR>
 nmap <leader>N :set nu!<CR>
 nmap <leader>a :vert ball<CR>
