@@ -65,7 +65,7 @@ syntax on " syntax highlighting
 set nohlsearch
 set nocompatible " prevents vim emulating vi's bugs/limits
 set guioptions=gtcf
-set number " line numbering
+"set nonu " line numbering
 set nowrap " don't wrap lines
 set sbr=^
 set showmatch
@@ -162,7 +162,8 @@ endif
 
 " backslash + [tcl etc]
 imap <leader>c <Esc>mpa/*<End>*/<Esc>`pl
-nmap <leader>t :Tlist<CR>
+"nmap <leader>t :Tlist<CR>
+nmap <leader>t :set ts=8 sw=8<CR>
 nmap <leader>x :r!xsel -o<CR>
 nmap <leader>s s<Space><Esc>pa<Space><Esc>l
 
