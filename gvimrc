@@ -14,6 +14,7 @@ if has("gui_running")
 	"set guifont=ProggyTinyTT:h11:cANSI
 	set lines=60 " avoid dwm putting us offscreen
 	"set columns=160
+	colo relaxed
 endif
 
 filetype plugin indent on
