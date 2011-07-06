@@ -147,7 +147,7 @@ set smartindent " uses c syntax etc to see where to indent to
 
 let c_space_errors = 1
 
-let gui_in_tui = 1
+let gui_in_tui = 0
 " Display - status line, etc
 if (gui_in_tui > 0 && &term =~ "-256color")
 	set t_Co=256
