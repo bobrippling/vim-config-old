@@ -74,7 +74,7 @@ hi	DiffDelete	cterm=bold	ctermfg=4	ctermbg=6
 hi	DiffText	cterm=bold	ctermbg=0
 hi	Underlined	cterm=underline	ctermfg=5
 hi	Error	guifg=White	guibg=Red	cterm=bold	ctermfg=7	ctermbg=1
-hi	SpellErrors	guifg=White	guibg=Red	cterm=bold	ctermfg=7	ctermbg=1
+hi	SpellErrors	guifg=White	guibg=Red	ctermfg=5	ctermbg=7
 hi	ColorColumn	guifg=Grey	guibg=Grey	ctermbg=8
 
 hi	Pmenu	ctermfg=0	ctermbg=6

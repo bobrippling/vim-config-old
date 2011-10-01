@@ -43,7 +43,7 @@ if has("autocmd")
 			\ endif |
 			\ endif
 			" Need to postpone using "zv" until after reading the modelines.
-			autocmd BufWinEnter *
+		autocmd BufWinEnter *
 			\ if exists("b:doopenfold") |
 			\ exe "normal zv" |
 			\ if(b:doopenfold > 1) |
@@ -51,7 +51,7 @@ if has("autocmd")
 			\ endif |
 			\ unlet b:doopenfold |
 			\ endif
-			augroup END
+	augroup END
 endif
 
 function! Wm()
@@ -89,7 +89,7 @@ set shortmess=filmnrwxtToO
 set nofoldenable
 set cryptmethod=blowfish
 set sidescroll=1
-
+set nowrapscan
 
 "set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\ [HEX=0x%02.2B]\ [POS=%04l/%L,%04v,%p%%]\
 "set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%04v,%04l,%p%%]\ [LEN=%L]
@@ -145,7 +145,8 @@ set foldlevel=256 " annoying
 "set autoindent " indents to same as last line
 set smartindent " uses c syntax etc to see where to indent to
 
-let c_space_errors = 1
+let   c_space_errors = 1
+let   c_no_curly_error = 1
 
 let gui_in_tui = 0
 " Display - status line, etc
@@ -204,6 +205,8 @@ nnoremap zh 8zl
 
 nnoremap ' `
 nnoremap ` '
+
+nnoremap ZW :w<CR>
 
 "vmap <C-c> y:call system("xclip -i -selection clipboard", getreg("\""))<CR>:call system("xclip -i", getreg("\""))<CR>
 
