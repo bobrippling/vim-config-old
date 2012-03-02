@@ -140,6 +140,7 @@ set tabstop=2
 set sr " shifts are a multiple of sw
 set nobackup
 set ignorecase " searching
+set clipboard= " no x11 change on visual
 
 set foldlevel=256 " annoying
 
@@ -172,9 +173,6 @@ nmap <leader>s s<Space><Esc>pa<Space><Esc>l
 
 nmap <leader>m :call Wm()<CR>
 nmap <leader>n :cn<CR>
-
-nmap <tab>     >>
-nmap <S-tab>   <<
 
 nmap <leader>l :set list!<CR>
 nmap <leader>h :set hls!<CR>
