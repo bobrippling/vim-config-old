@@ -1,0 +1,38 @@
+set guicursor+=a:blinkon0
+set guioptions=
+set scrolloff=3
+set wildmode=list:longest
+set noswapfile
+set nowrap
+set cindent
+set history=200
+set ts=2 sw=2
+set incsearch ignorecase
+
+set mps+=<:>,=:;
+
+syn on
+
+nmap <leader>w :set wrap!<CR>
+nmap <leader>h :set hls!<CR>
+nmap ZW :w<CR>
+
+function! Trim()
+	" fix - no error
+	normal! mQ
+	%s/\s\+$//e
+	%s/  /\t/ge
+	normal! 'Q
+endf
+
+nnoremap <C-E> 3<C-E>
+nnoremap <C-Y> 3<C-Y>
+
+"if has("win32")
+if has("unix")
+	let s:uname = system("uname")
+	if s:uname == "Darwin\n"
+		" Mac options here
+		set viminfo=
+	endif
+endif
