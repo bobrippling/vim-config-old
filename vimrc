@@ -15,7 +15,7 @@ if has("autocmd")
 		normal 'Z
 	endfunction
 
-	autocmd BufRead,BufNewFile *.s,asm,nasm set ft=nasm
+	autocmd BufRead,BufNewFile *.s,asm set ft=asm
 	"autocmd BufRead,BufNewFile *.txt        set spell
 	autocmd FileType c,cpp,slang            set cindent
 
