@@ -92,6 +92,7 @@ set sidescroll=1
 set nowrapscan
 set linebreak " visual wrapping
 set breakat=\ \	!@*-+;:,./?
+set ve=all
 
 "set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\ [HEX=0x%02.2B]\ [POS=%04l/%L,%04v,%p%%]\
 "set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%04v,%04l,%p%%]\ [LEN=%L]
