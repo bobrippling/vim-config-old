@@ -1,6 +1,10 @@
 filetype on
 set colorcolumn=
 
+set runtimepath^=~/.vim/GIT/ctrlp.vim
+let g:ctrlp_cmd = 'CtrlPCurWD'
+set wildignore+=*.o
+
 if has("autocmd")
 	filetype indent on
 	filetype plugin on
@@ -169,8 +173,9 @@ endif
 " backslash + [tcl etc]
 imap <leader>c <Esc>mpa/*<End>*/<Esc>`pl
 "nmap <leader>t :Tlist<CR>
-nmap <leader>t :set ts=8 sw=8<CR>
+"nmap <leader>t :set ts=8 sw=8<CR>
 nmap <leader>x :r!xsel -o<CR>
+nmap <leader>z :r!tmux showb<CR>
 nmap <leader>s s<Space><Esc>pa<Space><Esc>l
 
 nmap <leader>m :call Wm()<CR>
