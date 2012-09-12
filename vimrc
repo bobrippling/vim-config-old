@@ -5,30 +5,29 @@ set runtimepath^=~/.vim/GIT/ctrlp.vim
 let g:ctrlp_cmd = 'CtrlPCurWD'
 set wildignore+=*.o
 
+function! TrimSpaces()
+	normal mZ
+	%s/\s\+$//e
+	if line("'Z") != line(".")
+		echo "Stripped whitespace\n"
+	endif
+	normal 'Z
+endfunction
+
 if has("autocmd")
 	filetype indent on
 	filetype plugin on
 
-
-	function! TrimSpaces()
-		normal mZ
-		%s/\s\+$//e
-		if line("'Z") != line(".")
-			echo "Stripped whitespace\n"
-		endif
-		normal 'Z
-	endfunction
-
-	autocmd BufRead,BufNewFile *.s,asm set ft=asm
-	"autocmd BufRead,BufNewFile *.txt        set spell
 	autocmd FileType c,cpp,slang            set cindent
+	"autocmd FileType c,cpp                  so ~/.vim/omni.vim
+	autocmd FileType text                   set wrap
 
-	autocmd FileType c,cpp                  so ~/.vim/omni.vim
+	autocmd BufRead,BufNewFile *.txt   set ft=text
+	autocmd BufRead,BufNewFile *.s,asm set ft=asm
 
-	autocmd BufRead,BufNewFile *.txt        set wrap
+	autocmd BufRead,BufNewFile *.ll    set ft=llvm
 
-	autocmd BufWritePre *                   call TrimSpaces()
-	" binding to turn off ^
+	autocmd BufWritePre *              call TrimSpaces()
 	nmap <leader>W :autocmd! BufWritePre<CR>
 
 	" when we reload, tell vim to restore the cursor to the saved position
