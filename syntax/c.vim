@@ -1,0 +1,1 @@
+syn keyword cOperator __builtin_constant_p __builtin_trap __builtin_types_compatible_p __builtin_unreachable
