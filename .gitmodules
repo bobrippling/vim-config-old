@@ -6,4 +6,4 @@
 	url = https://github.com/tpope/vim-surround.git
 [submodule "GIT/nerdtree"]
 	path = GIT/nerdtree
-	url = git://github.com/scrooloose/nerdtree.git\ngit://github.com/scrooloose/nerdtree.git
+	url = git://github.com/scrooloose/nerdtree.git
