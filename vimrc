@@ -5,6 +5,8 @@ set runtimepath^=~/.vim/GIT/ctrlp.vim
 let g:ctrlp_cmd = 'CtrlPCurWD'
 set wildignore+=*.o
 
+so ~/.vim/GIT/nerdtree/plugin/NERD_tree.vim
+
 function! TrimSpaces()
 	normal mZ
 	%s/\s\+$//e
