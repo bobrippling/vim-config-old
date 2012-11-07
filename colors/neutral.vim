@@ -61,7 +61,7 @@ hi	Type	guifg=CornflowerBlue	ctermfg=2
 hi	Function	guifg=navajowhite	ctermfg=brown
 " V struct, enum
 hi	Structure	guifg=green	ctermfg=green	cterm=bold
-hi	LineNr	guifg=grey50	ctermfg=3
+hi	LineNr	term=bold	cterm=NONE	ctermfg=DarkGrey	ctermbg=NONE	gui=NONE	guifg=DarkGrey	guibg=NONE
 hi	Ignore	guifg=grey40	cterm=bold	ctermfg=7
 hi	Todo	guifg=orangered	guibg=yellow2
 hi	Directory	ctermfg=darkcyan
