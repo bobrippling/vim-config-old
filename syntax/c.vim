@@ -6,3 +6,5 @@ syn keyword cOperator
 			\ __builtin_frame_address
 			\ __builtin_return_address
 			\ __builtin_expect
+
+syn keyword	cStorageClass	__attribute
