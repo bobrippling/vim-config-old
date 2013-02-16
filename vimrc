@@ -69,6 +69,7 @@ endfunction
 syntax on " syntax highlighting
 set nohlsearch
 set nocompatible " prevents vim emulating vi's bugs/limits
+set cpoptions+=i
 set guioptions=gtcf
 "set nonu " line numbering
 set nowrap " don't wrap lines
@@ -99,6 +100,7 @@ set linebreak " visual wrapping
 set breakat=\ \	!@*-+;:,./?
 set showbreak=>\ "
 set ve=all
+set secure
 
 "set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\ [HEX=0x%02.2B]\ [POS=%04l/%L,%04v,%p%%]\
 "set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%04v,%04l,%p%%]\ [LEN=%L]
