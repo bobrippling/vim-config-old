@@ -70,7 +70,7 @@ syntax on " syntax highlighting
 set nohlsearch
 set nocompatible " prevents vim emulating vi's bugs/limits
 set guioptions=gtcf
-set rnu " line numbering, relative
+"set nonu " line numbering
 set nowrap " don't wrap lines
 set sbr=^
 set showmatch
@@ -186,7 +186,7 @@ nmap <leader>n :cn<CR>
 nmap <leader>l :set list!<CR>
 nmap <leader>h :set hls!<CR>
 nmap <leader>w :set wrap!<CR>
-nmap <leader>N :set rnu!<CR>
+nmap <leader>N :set nu!<CR>
 nmap <leader>a :vert ball<CR>
 
 " man page auto ret
