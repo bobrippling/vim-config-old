@@ -26,14 +26,14 @@ hi	Cursor	guibg=khaki	guifg=slategrey
 hi	VertSplit	guibg=#c2bfa5	guifg=grey40	gui=none	cterm=reverse
 hi	Folded	guibg=black	guifg=grey40	ctermfg=grey	ctermbg=darkgrey
 hi	FoldColumn	guibg=black	guifg=grey20	ctermfg=4	ctermbg=7
-hi	IncSearch	guifg=green	guibg=black	cterm=none			ctermbg=white
 hi	ModeMsg	guifg=goldenrod	cterm=none	ctermfg=brown
 hi	MoreMsg	guifg=SeaGreen	ctermfg=darkgreen
 " V aka /^~$/ outside the buffer
 "hi	NonText	guifg=RoyalBlue	guibg=grey15	cterm=bold	ctermfg=blue
 hi	NonText	guifg=#4a4a59	guibg=grey15	cterm=bold	ctermfg=blue
 hi	Question	guifg=springgreen	ctermfg=green
-hi	Search	guibg=peru	guifg=wheat	cterm=none	ctermfg=darkblue	ctermbg=white
+hi	Search	guibg=peru	guifg=wheat	cterm=none	ctermfg=black ctermbg=white
+hi	IncSearch	guifg=green	guibg=black	cterm=none	ctermfg=black ctermbg=white
 " V like the space+tab representations
 "hi	SpecialKey	guifg=yellowgreen	ctermfg=darkgreen	cterm=none
 hi	SpecialKey	guifg=#4a4a59	ctermfg=black	cterm=bold
