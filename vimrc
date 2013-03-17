@@ -7,6 +7,12 @@ set wildignore+=*.o
 
 so ~/.vim/GIT/nerdtree/plugin/NERD_tree.vim
 
+" let g:seek_enable_jumps = 1
+let g:SeekKey = 'e'
+let g:SeekBackKey = 'E'
+let g:SeekCutShortKey = '-'
+let g:SeekBackCutShortKey = '+'
+
 function! TrimSpaces()
 	normal mZ
 	%s/\s\+$//e

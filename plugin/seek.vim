@@ -1,0 +1,1 @@
+../GIT/vim-seek/plugin/seek.vim
