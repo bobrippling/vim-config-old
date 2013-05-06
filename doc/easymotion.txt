@@ -1,0 +1,1 @@
+../GIT/vim-easymotion/doc/easymotion.txt
