@@ -134,6 +134,11 @@ set nolist
 " display /^\t* \+[^ \t]/
 
 
+set undofile
+set undodir=$HOME/.vim/undo
+set undolevels=1000         " How many undos
+set undoreload=10000        " number of lines to save for undo
+
 
 " Tell vim to remember certain things when we exit
 "  '20 : marks will be remembered for up to X previously edited files
