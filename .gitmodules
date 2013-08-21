@@ -10,9 +10,6 @@
 [submodule "GIT/vim-easymotion"]
 	path = GIT/vim-easymotion
 	url = git://github.com/Lokaltog/vim-easymotion.git
-[submodule "GIT/vim-seek"]
-	path = GIT/vim-seek
-	url = git://github.com/goldfeld/vim-seek.git\ngit://github.com/goldfeld/vim-seek.git
 [submodule "GIT/tabular"]
 	path = GIT/tabular
 	url = git://github.com/godlygeek/tabular.git
