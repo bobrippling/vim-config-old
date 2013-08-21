@@ -13,3 +13,6 @@
 [submodule "GIT/tabular"]
 	path = GIT/tabular
 	url = git://github.com/godlygeek/tabular.git
+[submodule "GIT/clang_complete"]
+	path = GIT/clang_complete
+	url = git://github.com/Rip-Rip/clang_complete
