@@ -47,6 +47,7 @@ set noexpandtab smarttab shiftwidth=2 tabstop=2 shiftround smartindent
 set virtualedit=all
 
 set scrolloff=5
+set sidescrolloff=3
 
 set laststatus=1
 set showcmd
@@ -56,7 +57,6 @@ set shortmess=aoOTI
 set nofoldenable
 set foldlevel=256 " annoying
 
-set sidescrolloff=10
 set showbreak=>\ "
 set secure
 set path+=/usr/include/x86_64-linux-gnu/,
