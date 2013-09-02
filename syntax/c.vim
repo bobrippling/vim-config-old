@@ -6,6 +6,7 @@ syn keyword cOperator
 			\ __builtin_frame_address
 			\ __builtin_return_address
 			\ __builtin_expect
+			\ __builtin_choose_expr
 			\ __typeof
 			\ __typeof__
 
