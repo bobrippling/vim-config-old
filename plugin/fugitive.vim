@@ -1,0 +1,1 @@
+../GIT/fugitive/plugin/fugitive.vim
