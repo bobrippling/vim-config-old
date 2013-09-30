@@ -136,6 +136,7 @@ nmap <leader>h :set hls!<CR>
 nmap <leader>w :set wrap!<CR>
 nmap <leader>a :vert ball<CR>
 nmap <leader>D :cd %:h<CR>
+nmap <leader>E :e %:h
 
 " man page auto return
 nmap K K<cr>
