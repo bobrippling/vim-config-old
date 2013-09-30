@@ -4,9 +4,6 @@
 [submodule "GIT/vim-surround"]
 	path = GIT/vim-surround
 	url = https://github.com/tpope/vim-surround.git
-[submodule "GIT/nerdtree"]
-	path = GIT/nerdtree
-	url = git://github.com/scrooloose/nerdtree.git
 [submodule "GIT/vim-easymotion"]
 	path = GIT/vim-easymotion
 	url = git://github.com/Lokaltog/vim-easymotion.git
