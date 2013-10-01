@@ -20,7 +20,7 @@ filetype indent on
 filetype plugin on
 syntax on
 
-colorscheme neutral
+colorscheme blank
 
 set nocompatible
 set cpoptions+=i
