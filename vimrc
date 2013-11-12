@@ -157,6 +157,7 @@ nnoremap ZE :e<CR>
 " plugins
 set runtimepath+=~/.vim/GIT/ctrlp.vim
 let g:ctrlp_cmd = 'CtrlPCurWD'
+let g:ctrlp_max_depth = 4
 
 
 " local vimrc
