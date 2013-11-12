@@ -24,6 +24,7 @@ colorscheme neutral
 
 set nocompatible
 set cpoptions+=i
+set tildeop
 
 set wildignore+=*.o
 set wildmode=list:longest
