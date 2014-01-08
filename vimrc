@@ -31,12 +31,13 @@ set wildmode=list:longest
 set completeopt=menu,longest
 
 set guioptions=gcf
-set sbr=^
+set showbreak=^
 
 set backspace=indent,eol,start
 
 set ignorecase
 set nowrap
+set linebreak
 
 " search
 set nohlsearch incsearch smartcase nowrapscan
