@@ -80,6 +80,12 @@ hi	ColorColumn	guifg=Grey	guibg=Grey	ctermbg=8
 hi	Pmenu	ctermfg=0	ctermbg=6
 hi	VertSplit	ctermfg=0	ctermbg=8
 
-" 0 black
-" 1 red  | 2 green | 3 yellow | 4 blue
-" 5 pink | 6 cyan  | 7 white  | 8 grey
+
+" DarkBlue Blue LightBlue
+" DarkGreen Green LightGreen
+" DarkCyan Cyan LightCyan
+" DarkRed Red LightRed
+" DarkMagenta Magenta LightMagenta
+" Brown DarkYellow Yellow LightYellow
+" LightGray LightGrey Gray Grey DarkGray DarkGrey
+" Black White
