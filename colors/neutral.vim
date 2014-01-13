@@ -24,8 +24,8 @@ let g:colors_name = "neutral"
 hi	Normal	guifg=White	guibg=grey15
 hi	Cursor	guibg=khaki	guifg=slategrey
 hi	VertSplit	guibg=#c2bfa5	guifg=grey40	gui=none	cterm=reverse
-hi	Folded	guibg=black	guifg=grey40	ctermfg=grey	ctermbg=darkgrey
-hi	FoldColumn	guibg=black	guifg=grey20	ctermfg=4	ctermbg=7
+hi	Folded	ctermfg=DarkGrey	ctermbg=none
+
 hi	ModeMsg	guifg=goldenrod	cterm=none	ctermfg=brown
 hi	MoreMsg	guifg=SeaGreen	ctermfg=darkgreen
 " V aka /^~$/ outside the buffer
