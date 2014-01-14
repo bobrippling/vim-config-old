@@ -80,6 +80,8 @@ set history=200
 set nobackup
 set clipboard= " no x11 change on visual
 
+set foldlevelstart=0 " fdm=manual unless we have syntax
+set foldmethod=syntax
 
 " lets
 let c_space_errors = 1
@@ -156,6 +158,11 @@ nnoremap ` '
 nnoremap ZW :w<CR>
 nnoremap ZE :e<CR>
 
+" fold maps - prefer all-or-nothing
+nnoremap zc zC | nnoremap zC zc
+nnoremap zo zO | nnoremap zO zo
+nnoremap zm zM | nnoremap zM zm
+nnoremap zr zR | nnoremap zR zr
 
 " plugins
 set runtimepath+=~/.vim/GIT/ctrlp.vim
