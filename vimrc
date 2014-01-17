@@ -93,7 +93,7 @@ autocmd FileType c,cpp,slang            set cindent
 autocmd FileType text                   set wrap
 
 autocmd BufRead,BufNewFile *.txt   set ft=text
-autocmd BufRead,BufNewFile *.s,asm set ft=asm
+autocmd BufRead,BufNewFile *.s,*.asm set ft=gas
 
 autocmd BufRead,BufNewFile *.ll    set ft=llvm
 
