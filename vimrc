@@ -80,8 +80,8 @@ set history=200
 set nobackup
 set clipboard= " no x11 change on visual
 
-set foldlevelstart=0 " fdm=manual unless we have syntax
-set foldmethod=syntax
+"set foldlevelstart=0 " fdm=manual unless we have syntax
+"set foldmethod=syntax
 
 " lets
 let c_space_errors = 1
