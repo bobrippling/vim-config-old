@@ -55,7 +55,7 @@ set sidescrolloff=3
 set laststatus=1
 set showcmd
 set ttyfast
-set shortmess=aoOTI
+set shortmess=aoOTIt
 
 set nofoldenable
 set foldlevel=256 " annoying
