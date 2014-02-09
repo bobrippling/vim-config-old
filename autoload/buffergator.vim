@@ -1,0 +1,1 @@
+../GIT/vim-buffergator/autoload/buffergator.vim
