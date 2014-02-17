@@ -33,7 +33,7 @@ hi	MoreMsg	guifg=SeaGreen	ctermfg=darkgreen
 hi	NonText	guifg=#4a4a59	guibg=grey15	cterm=bold	ctermfg=blue
 hi	Question	guifg=springgreen	ctermfg=green
 hi	Search	guibg=peru	guifg=wheat	cterm=none	ctermfg=black ctermbg=white
-hi	IncSearch	guifg=green	guibg=black	cterm=none	ctermfg=black ctermbg=white
+hi	IncSearch	guifg=green	guibg=black	cterm=none	ctermfg=black ctermbg=yellow
 " V like the space+tab representations
 "hi	SpecialKey	guifg=yellowgreen	ctermfg=darkgreen	cterm=none
 hi	SpecialKey	guifg=#4a4a59	ctermfg=black	cterm=bold
