@@ -166,6 +166,13 @@ nnoremap zo zO | nnoremap zO zo
 nnoremap zm zM | nnoremap zM zm
 nnoremap zr zR | nnoremap zR zr
 
+" fix J to be an operator command
+func! Joinoperator(submode)
+	'[,']join
+endfunc
+nnoremap J :silent set operatorfunc=Joinoperator<CR>g@
+
+
 " plugins
 set runtimepath+=~/.vim/GIT/ctrlp.vim
 let g:ctrlp_cmd = 'CtrlPCurWD'
