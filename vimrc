@@ -9,7 +9,7 @@ function! TrimSpaces()
 endfunction
 
 function! Wm()
-	w
+	up
 	mak
 endfunction
 
