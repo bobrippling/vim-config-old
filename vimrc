@@ -168,7 +168,9 @@ nnoremap zr zR | nnoremap zR zr
 
 " fix J to be an operator command
 func! Joinoperator(submode)
+	norm $mj
 	'[,']join
+	norm 'jl
 endfunc
 nnoremap J :silent set operatorfunc=Joinoperator<CR>g@
 
