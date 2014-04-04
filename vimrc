@@ -82,6 +82,8 @@ set history=200
 set nobackup
 set clipboard= " no x11 change on visual
 
+set visualbell t_vb=
+
 "set foldlevelstart=0 " fdm=manual unless we have syntax
 "set foldmethod=syntax
 
