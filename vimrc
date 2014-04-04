@@ -51,6 +51,7 @@ set virtualedit=all
 
 set scrolloff=5
 set sidescrolloff=3
+set sidescroll=1
 
 set laststatus=1
 set showcmd
