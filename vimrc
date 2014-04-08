@@ -45,7 +45,7 @@ set nohlsearch incsearch smartcase nowrapscan
 
 set showmatch matchpairs+=<:>
 
-set noexpandtab smarttab shiftwidth=2 tabstop=2 shiftround smartindent
+set noexpandtab smarttab shiftwidth=2 tabstop=2 shiftround
 
 set virtualedit=all
 
