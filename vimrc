@@ -177,6 +177,9 @@ func! Joinoperator(submode)
 endfunc
 nnoremap J :silent set operatorfunc=Joinoperator<CR>g@
 
+" matches
+match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$'
+
 
 " plugins
 set runtimepath+=~/.vim/GIT/ctrlp.vim
