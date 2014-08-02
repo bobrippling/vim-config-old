@@ -82,6 +82,7 @@ syn match   gasLocalLabel	/\d\{1,2\}[:fb]/
 syn match   gasOperator		/[+-/*=|&~<>]\|<=\|>=\|<>/
 syn region  gasComment		start=/\/\*/ end=/\*\//
 syn region  gasCommentSingle    start=/#/ end=/$/
+syn match gasComment		/\/\/.*/
 
 " finally: Opcodes
 "
