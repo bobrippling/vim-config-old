@@ -84,6 +84,8 @@ set clipboard= " no x11 change on visual
 
 set visualbell t_vb=
 
+set formatoptions+=tcroqlj
+
 "set foldlevelstart=0 " fdm=manual unless we have syntax
 "set foldmethod=syntax
 
