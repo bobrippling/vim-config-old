@@ -86,6 +86,8 @@ set visualbell t_vb=
 
 set formatoptions+=tcroqlj
 
+set cinoptions=l1,N-s,t0
+
 "set foldlevelstart=0 " fdm=manual unless we have syntax
 "set foldmethod=syntax
 
