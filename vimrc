@@ -27,7 +27,7 @@ set cpoptions+=i
 set tildeop
 set nomore
 
-set wildignore+=*.o
+set wildignore+=*.o,*.d
 set wildmode=list:longest
 set completeopt=menu,longest
 
