@@ -16,3 +16,6 @@
 [submodule "vim-angry"]
 	path = bundle/vim-angry
 	url = https://github.com/b4winckler/vim-angry
+[submodule "vim-snipmate"]
+	path = bundle/vim-snipmate
+	url = git://github.com/grayrest/vim-snipmate.git
