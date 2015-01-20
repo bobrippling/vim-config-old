@@ -1,21 +1,15 @@
-[submodule "GIT/ctrlp.vim"]
-	path = GIT/ctrlp.vim
-	url = https://github.com/kien/ctrlp.vim.git
-[submodule "GIT/vim-surround"]
-	path = GIT/vim-surround
-	url = https://github.com/tpope/vim-surround.git
-[submodule "GIT/vim-easymotion"]
-	path = GIT/vim-easymotion
-	url = git://github.com/Lokaltog/vim-easymotion.git
-[submodule "GIT/tabular"]
-	path = GIT/tabular
+[submodule "ctrlp.vim"]
+	path = bundle/ctrlp.vim
+	url = git://github.com/kien/ctrlp.vim.git
+[submodule "surround"]
+	path = bundle/vim-surround
+	url = git://github.com/tpope/vim-surround.git
+[submodule "tabular"]
+	path = bundle/tabular
 	url = git://github.com/godlygeek/tabular.git
-[submodule "GIT/clang_complete"]
-	path = GIT/clang_complete
-	url = git://github.com/Rip-Rip/clang_complete
-[submodule "GIT/fugitive"]
-	path = GIT/fugitive
-	url = https://github.com/tpope/vim-fugitive
-[submodule "GIT/vim-buffergator"]
-	path = GIT/vim-buffergator
-	url = https://github.com/jeetsukumaran/vim-buffergator
+[submodule "fugitive"]
+	path = bundle/fugitive
+	url = git://github.com/tpope/vim-fugitive
+[submodule "pathogen"]
+	path = bundle/pathogen
+	url = git://github.com/tpope/vim-pathogen

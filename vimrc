@@ -14,6 +14,9 @@ function! Wm()
 endfunction
 
 
+" plugins
+execute pathogen#infect()
+
 " settings
 filetype on
 filetype indent on
