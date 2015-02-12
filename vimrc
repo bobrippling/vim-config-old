@@ -201,6 +201,7 @@ let g:buffergator_sort_regime = "mru"
 let g:yankring_replace_n_nkey = '<C-J>'
 let g:yankring_replace_n_pkey = '<C-K>'
 let g:yankring_history_dir = '~/.vim/'
+nmap <leader>p :YRShow<CR>
 
 " local vimrc
 let s:extra = globpath(&rtp, '/vimrc.local')
