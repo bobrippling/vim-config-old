@@ -19,3 +19,6 @@
 [submodule "vim-snipmate"]
 	path = bundle/vim-snipmate
 	url = git://github.com/bobrippling/snipmate.vim
+[submodule "YankRing.vim"]
+	path = bundle/YankRing.vim
+	url = git://github.com/vim-scripts/YankRing.vim
