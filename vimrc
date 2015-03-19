@@ -23,7 +23,7 @@ filetype indent on
 filetype plugin on
 syntax on
 
-colorscheme neutral
+colorscheme grb256
 
 set nocompatible
 set cpoptions+=i
