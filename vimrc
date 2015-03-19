@@ -87,7 +87,10 @@ set clipboard= " no x11 change on visual
 
 set visualbell t_vb=
 
-set formatoptions+=tcroqlj
+set formatoptions+=tcroql
+if v:version >= 704
+	set formatoptions+=j
+endif
 
 set cinoptions=l1,N-s,t0
 
