@@ -149,6 +149,7 @@ nmap <leader>s s<Space><Esc>pa<Space><Esc>l
 nmap <leader>m :call Wm()<CR>
 nmap <leader>n :cn<CR>
 nmap <leader>j :n<CR>
+nmap <leader>J :up\|n<CR>
 
 nmap <leader>l :set list!<CR>
 nmap <leader>h :set hls!<CR>
