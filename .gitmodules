@@ -22,3 +22,6 @@
 [submodule "YankRing.vim"]
 	path = bundle/YankRing.vim
 	url = git://github.com/vim-scripts/YankRing.vim
+[submodule "bundle/gundo.vim"]
+	path = bundle/gundo.vim
+	url = git://github.com/sjl/gundo.vim
