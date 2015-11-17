@@ -38,4 +38,4 @@ hi IncSearch guifg=green guibg=black cterm=none ctermfg=black ctermbg=green
 hi Pmenu ctermfg=white ctermbg=darkgrey
 hi PmenuSel ctermfg=16 ctermbg=156
 
-hi NonText guifg=#4a4a59 guibg=grey15 cterm=NONE ctermfg=blue
+hi NonText guifg=#4a4a59 guibg=grey15 cterm=bold ctermfg=blue
