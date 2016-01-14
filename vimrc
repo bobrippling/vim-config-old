@@ -87,6 +87,9 @@ set clipboard= " no x11 change on visual
 
 set visualbell t_vb=
 
+" remove '=' from filename completion
+set isfname-==
+
 set formatoptions+=tcroql
 if v:version >= 704
 	set formatoptions+=j
