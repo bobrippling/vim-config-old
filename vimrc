@@ -99,6 +99,8 @@ set cinoptions=l1,N-s,t0
 
 set splitright splitbelow
 
+set diffopt+=vertical
+
 "set foldlevelstart=0 " fdm=manual unless we have syntax
 "set foldmethod=syntax
 
