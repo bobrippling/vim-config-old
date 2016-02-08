@@ -33,6 +33,8 @@ set nomore
 set wildignore+=*.o,*.d
 set wildmode=list:longest
 set completeopt=menu,longest
+set complete+=U " include non-bufferlist files
+set complete-=i " don't follow includes
 
 set guioptions=gcf
 set showbreak=^
