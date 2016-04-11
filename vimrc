@@ -24,6 +24,7 @@ filetype plugin on
 syntax on
 
 colorscheme grb256
+highlight SpellBad ctermbg=red
 
 set nocompatible
 set cpoptions+=i
