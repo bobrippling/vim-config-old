@@ -25,3 +25,6 @@
 [submodule "bundle/gundo.vim"]
 	path = bundle/gundo.vim
 	url = git://github.com/sjl/gundo.vim
+[submodule "bundle/a.vim"]
+	path = bundle/a.vim
+	url = https://github.com/vim-scripts/a.vim
