@@ -16,6 +16,7 @@ endfunction
 
 " plugins
 execute pathogen#infect()
+call pathogen#helptags()
 
 " settings
 filetype on
