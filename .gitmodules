@@ -28,3 +28,6 @@
 [submodule "bundle/a.vim"]
 	path = bundle/a.vim
 	url = https://github.com/vim-scripts/a.vim
+[submodule "bundle/vim-niceblock"]
+	path = bundle/vim-niceblock
+	url = git://github.com/kana/vim-niceblock
