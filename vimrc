@@ -203,6 +203,10 @@ func! Joinoperator(submode)
 endfunc
 nnoremap J :silent set operatorfunc=Joinoperator<CR>g@
 
+" have [% and ]% as [[ and ]] equivalents of [{ and ]}
+nnoremap <silent> [% :call searchpair('\[', '', '\]', 'Wb')<CR>
+nnoremap <silent> ]% :call searchpair('\[', '', '\]', 'W')<CR>
+
 " matches
 match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$'
 
