@@ -193,6 +193,8 @@ nnoremap zo zO | nnoremap zO zo
 nnoremap zm zM | nnoremap zM zm
 nnoremap zr zR | nnoremap zR zr
 
+command -nargs=+ Filter let @p='' | execute 'g/<args>/y P' | new | setlocal bt=nofile | put! p
+
 " fix J to be an operator command
 func! Joinoperator(submode)
 	norm $mj
