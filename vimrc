@@ -70,7 +70,7 @@ set foldlevel=256 " annoying
 
 set showbreak=>\ "
 set secure
-set path+=/usr/include/x86_64-linux-gnu/,
+set path+=/usr/include/x86_64-linux-gnu/,/usr/include/arm-linux-gnueabihf/
 
 set statusline=\ \%f%m%r%h%w\ ::\ %y[%{&ff}]\%=\ [%02v\ %p%%\ %l/%L]
 
