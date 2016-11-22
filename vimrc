@@ -117,6 +117,8 @@ let c_gnu = 1
 autocmd FileType c,cpp,slang            set cindent
 autocmd FileType text                   set wrap
 
+autocmd FileType crontab setlocal nobackup nowritebackup
+
 autocmd BufRead,BufNewFile *.txt   set ft=text
 autocmd BufRead,BufNewFile *.s,*.asm set ft=gas
 
