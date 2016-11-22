@@ -212,6 +212,8 @@ nnoremap <silent> ]% :call searchpair('\[', '', '\]', 'W')<CR>
 " matches
 match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$'
 
+" builtin global vars
+let g:netrw_banner=0
 
 " plugins
 set runtimepath+=~/.vim/GIT/ctrlp.vim
