@@ -228,7 +228,7 @@ let g:yankring_replace_n_pkey = '<C-K>'
 let g:yankring_history_dir = '~/.vim/'
 nmap <leader>p :YRShow<CR>
 
-let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+let g:ctrlp_user_command = 'ag %s -l --nocolor --ignore "_*" --ignore "*.o" --ignore "*.d" -g "" --depth 4'
 
 " local vimrc
 let s:extra = globpath(&rtp, '/vimrc.local')
