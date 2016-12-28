@@ -219,6 +219,7 @@ let g:netrw_banner=0
 set runtimepath+=~/.vim/GIT/ctrlp.vim
 let g:ctrlp_cmd = 'CtrlPCurWD'
 let g:ctrlp_max_depth = 4
+nnoremap g<C-P> :CtrlPTag<CR>
 
 let g:buffergator_viewport_split_policy = "B"
 let g:buffergator_sort_regime = "mru"
