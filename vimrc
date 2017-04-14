@@ -71,9 +71,6 @@ set showcmd
 set ttyfast
 set shortmess=aoOTIt
 
-set nofoldenable
-set foldlevel=256 " annoying
-
 set showbreak=>\ "
 set secure
 set path+=/usr/include/x86_64-linux-gnu/,/usr/include/arm-linux-gnueabihf/
