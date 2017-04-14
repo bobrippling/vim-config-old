@@ -1,3 +1,6 @@
+" Regex notes:
+" match "abc.*$" where ".*" doesn't contain xyz: /abc\(\(xyz\)\@!.\)*$/
+
 " functions
 function! TrimSpaces()
 	normal mZ
