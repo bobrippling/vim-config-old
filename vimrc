@@ -49,6 +49,9 @@ set backspace=indent,eol,start
 set ignorecase
 set nowrap
 set linebreak
+if exists("&breakindent")
+	set breakindent
+endif
 
 " search
 set nohlsearch incsearch smartcase nowrapscan
