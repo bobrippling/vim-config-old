@@ -236,6 +236,7 @@ let g:buffergator_sort_regime = "mru"
 let g:yankring_replace_n_nkey = '<C-J>'
 let g:yankring_replace_n_pkey = '<C-K>'
 let g:yankring_history_dir = '~/.vim/'
+let g:yankring_max_element_length = 999999999
 nmap <leader>p :YRShow<CR>
 
 set grepprg=ag
