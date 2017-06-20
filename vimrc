@@ -200,6 +200,7 @@ nnoremap zm zM | nnoremap zM zm
 nnoremap zr zR | nnoremap zR zr
 
 command -nargs=+ Filter let @p='' | execute 'g/<args>/y P' | new | setlocal bt=nofile | put! p
+command -nargs=1 ClearReg execute 'call setreg(''<args>'', [])'
 
 " fix J to be an operator command
 func! Joinoperator(submode)
