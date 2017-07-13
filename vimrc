@@ -199,6 +199,10 @@ nnoremap zo zO | nnoremap zO zo
 nnoremap zm zM | nnoremap zM zm
 nnoremap zr zR | nnoremap zR zr
 
+" make smartcase apply for * and #
+nnoremap * /\<<C-R><C-W>\><CR>
+nnoremap # ?\<<C-R><C-W>\><CR>
+
 command -nargs=+ -range=% Filter let @p='' | execute '<line1>,<line2>g/<args>/y P' | new | setlocal bt=nofile | put! p | 1d
 command -nargs=1 ClearReg execute 'call setreg(''<args>'', [])'
 command -nargs=0 SetMailReply set ft=mail tw=0 spell so=0
