@@ -105,6 +105,7 @@ endif
 set cinoptions=l1,N-s,t0
 
 set splitright splitbelow
+set noequalalways
 
 set diffopt+=vertical
 
