@@ -214,6 +214,7 @@ func! Joinoperator(submode)
 	norm 'jl
 endfunc
 nnoremap J :silent set operatorfunc=Joinoperator<CR>g@
+set nojoinspaces
 
 " have [% and ]% as [[ and ]] equivalents of [{ and ]}
 nnoremap <silent> [% :call searchpair('\[', '', '\]', 'Wb')<CR>
