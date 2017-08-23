@@ -234,7 +234,7 @@ let g:netrw_banner=0
 " plugins
 set runtimepath+=~/.vim/GIT/ctrlp.vim
 let g:ctrlp_cmd = 'CtrlPCurWD'
-let g:ctrlp_max_depth = 4
+let g:ctrlp_max_depth = 8
 nnoremap g<C-P> :CtrlPTag<CR>
 
 let g:buffergator_viewport_split_policy = "B"
@@ -248,7 +248,7 @@ nmap <leader>p :YRShow<CR>
 
 set grepprg=ag
 cabbrev ag grep
-let g:ctrlp_user_command = 'ag %s -l --nocolor --ignore "_[^_]*" --ignore "*.o" --ignore "*.d" -g "" --depth 4'
+let g:ctrlp_user_command = 'ag %s -l --nocolor --ignore "_[^_]*" --ignore "*.o" --ignore "*.d" --ignore "node_modules" -g "" --depth 8'
 nmap <leader>g :grep <C-R><C-W><CR>
 
 " local vimrc
