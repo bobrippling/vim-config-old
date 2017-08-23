@@ -221,9 +221,9 @@ set nojoinspaces
 nnoremap <silent> [% :call searchpair('\[', '', '\]', 'Wb')<CR>
 nnoremap <silent> ]% :call searchpair('\[', '', '\]', 'W')<CR>
 
-cnoremap <C-A> <Home>
+"cnoremap <C-A> <Home> - ^A expands all matches
 "cnoremap <C-F> <Right> - open cmdwindow
-cnoremap <C-B> <Left>
+"cnoremap <C-B> <Left>
 
 " matches
 match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$'
