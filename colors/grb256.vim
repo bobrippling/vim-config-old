@@ -32,7 +32,7 @@ hi DiffText ctermfg=white ctermbg=cyan cterm=none
 
 hi SpecialKey guifg=#4a4a59 ctermfg=black cterm=bold
 
-hi Search    guibg=peru  guifg=wheat cterm=none ctermfg=black ctermbg=yellow
+hi Search    guibg=peru  guifg=wheat ctermbg=darkgreen ctermfg=black cterm=standout
 hi IncSearch guifg=green guibg=black cterm=none ctermfg=black ctermbg=green
 
 hi Pmenu ctermfg=white ctermbg=darkgrey
