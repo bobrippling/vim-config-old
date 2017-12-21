@@ -31,3 +31,6 @@
 [submodule "bundle/vim-niceblock"]
 	path = bundle/vim-niceblock
 	url = git://github.com/kana/vim-niceblock
+[submodule "bundle/vim-editqf"]
+	path = bundle/vim-editqf
+	url = git://github.com/jceb/vim-editqf
