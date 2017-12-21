@@ -174,8 +174,6 @@ nmap <leader>h :set hls!<CR>
 nmap <leader>w :set wrap!<CR>
 nmap <leader>S :set spell!<CR>
 nmap <leader>a :vert ball<CR>
-nmap <leader>D :cd %:h<CR>
-nmap <leader>E :e %:h
 " preserve default yank register
 vmap <leader>d "_dP
 
