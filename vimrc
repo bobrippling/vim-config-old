@@ -244,8 +244,8 @@ let g:yankring_history_dir = '~/.vim/'
 let g:yankring_max_element_length = 999999999
 nmap <leader>p :YRShow<CR>
 
-set grepprg=ag\ --ignore\ \"_[^_]\*\"\ --ignore\ \"\*.o\"\ --ignore\ \"\*.d\"\ --ignore\ \"node_modules\"\ --ignore\ \"\*.min.js\*\"\ --depth\ 8
-let g:ctrlp_user_command = 'ag %s -l -g "" --nocolor --ignore "_[^_]*" --ignore "*.o" --ignore "*.d" --ignore "node_modules" --ignore "*.min.js*" --depth 8'
+set grepprg=ag\ --depth\ 8\ --ignore\ \"_[^_]\*\"\ --ignore\ \"\*.o\"\ --ignore\ \"\*.d\"\ --ignore\ \"node_modules\"\ --ignore\ \"\*.min.js\*\"
+let g:ctrlp_user_command = 'ag %s -l -g "" --depth 8 --nocolor --ignore "_[^_]*" --ignore "*.o" --ignore "*.d" --ignore "node_modules" --ignore "*.min.js*"'
 nmap <leader>g :grep <C-R><C-W><CR>
 
 let g:editqf_jump_to_error = 1
