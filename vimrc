@@ -245,7 +245,7 @@ let g:yankring_max_element_length = 999999999
 nmap <leader>p :YRShow<CR>
 
 set grepprg=ag
-let g:ctrlp_user_command = 'ag %s -l --nocolor --ignore "_[^_]*" --ignore "*.o" --ignore "*.d" --ignore "node_modules" --ignore "*.min.js*" -g "" --depth 8'
+let g:ctrlp_user_command = 'ag %s -l -g "" --nocolor --ignore "_[^_]*" --ignore "*.o" --ignore "*.d" --ignore "node_modules" --ignore "*.min.js*" --depth 8'
 nmap <leader>g :grep <C-R><C-W><CR>
 
 let g:editqf_jump_to_error = 1
