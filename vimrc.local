@@ -1,5 +1,7 @@
 let g:alternateExtensions_{"m"} = "h"
 let g:alternateExtensions_{"h"} = "c,cpp,m"
+let g:alternateExtensions_{"ts"} = "js"
+let g:alternateExtensions_{"js"} = "ts"
 
 set mp=make\ -s
 
