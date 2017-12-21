@@ -229,6 +229,7 @@ match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$'
 
 " builtin global vars
 let g:netrw_banner=0
+let g:netrw_list_hide = '\.sw[po]$,\.min'
 
 " plugins
 set runtimepath+=~/.vim/GIT/ctrlp.vim
