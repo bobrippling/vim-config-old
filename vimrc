@@ -51,6 +51,7 @@ set nowrap
 set linebreak
 if exists("&breakindent")
 	set breakindent
+	set breakindentopt+=shift:1
 endif
 
 " search
