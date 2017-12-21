@@ -76,7 +76,7 @@ set showbreak=>\ "
 set secure
 set path+=/usr/include/x86_64-linux-gnu/,/usr/include/arm-linux-gnueabihf/
 
-set statusline=\ \%f%m%r%h%w\ ::\ %y[%{&ff}]\%=\ [%02v\ %p%%\ %l/%L]
+set statusline=\ \%f%m%r%h%w\ %y[%{&ff}][%n]%=\ [%p%%]
 
 set encoding=utf-8
 set listchars=tab:»·,trail:·,precedes:<,extends:>
