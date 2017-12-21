@@ -249,6 +249,11 @@ cabbrev ag grep
 let g:ctrlp_user_command = 'ag %s -l --nocolor --ignore "_[^_]*" --ignore "*.o" --ignore "*.d" --ignore "node_modules" -g "" --depth 8'
 nmap <leader>g :grep <C-R><C-W><CR>
 
+let g:editqf_jump_to_error = 1
+let g:editqf_no_mappings = 1
+let g:editqf_no_type_mappings = 1
+nmap <leader>c :QFAddNote<CR>
+
 " local vimrc
 let s:extra = globpath(&rtp, '/vimrc.local')
 if filereadable(s:extra)
