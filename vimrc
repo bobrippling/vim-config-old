@@ -172,6 +172,7 @@ nmap <leader>J :up\|n<CR>
 
 nmap <leader>l :set list!<CR>
 nmap <leader>h :set hls!<CR>
+nmap <leader>H :noh<CR>
 nmap <leader>w :set wrap!<CR>
 nmap <leader>S :set spell!<CR>
 nmap <leader>a :vert ball<CR>
