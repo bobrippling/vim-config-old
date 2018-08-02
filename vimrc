@@ -63,7 +63,7 @@ set noexpandtab smarttab shiftwidth=2 tabstop=2 shiftround
 
 set virtualedit=all
 
-set scrolloff=3
+set scrolloff=1
 set sidescrolloff=3
 set sidescroll=1
 
