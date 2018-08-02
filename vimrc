@@ -234,6 +234,8 @@ nnoremap g= :silent set operatorfunc=Evalmath<CR>g@
 " have [% and ]% as [[ and ]] equivalents of [{ and ]}
 nnoremap <silent> [% :call searchpair('\[', '', '\]', 'Wb')<CR>
 nnoremap <silent> ]% :call searchpair('\[', '', '\]', 'W')<CR>
+nnoremap <silent> [< :call searchpair('<', '', '>', 'Wb')<CR>
+nnoremap <silent> ]> :call searchpair('<', '', '>', 'W')<CR>
 
 "cnoremap <C-A> <Home> - ^A expands all matches
 "cnoremap <C-F> <Right> - open cmdwindow
