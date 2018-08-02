@@ -1,9 +1,10 @@
 let g:alternateExtensions_{"m"} = "h"
 let g:alternateExtensions_{"h"} = "c,cpp,m"
+
 let g:alternateExtensions_{"ts"} = "js"
 let g:alternateExtensions_{"js"} = "ts"
 
-set mp=make\ -s
+"set mp=make\ -s
 
 nunmap <leader>x
 nmap <leader>x :r!pbpaste<CR>
@@ -13,7 +14,7 @@ let c_space_errors         = 0
 
 set listchars=tab:>-,trail:%
 
-let g:netrw_list_hide .= ',\.js'
+"let g:netrw_list_hide .= ',\.js'
 
 "set grepprg=ack\ --nogroup\ -H\ -k
 
@@ -34,6 +35,8 @@ autocmd FileType objcpp                 set et ts=4 sw=4
 
 autocmd FileType swift                  set et ts=4 sw=4
 
+autocmd FileType python set noet ts=2 sw=2
+
 autocmd BufRead,BufNewFile *.ts    set ft=typescript et ts=4 sw=4 complete=.,w,b,t,u suffixesadd=.ts,.js iskeyword-=: path+=Scripts/
 autocmd BufRead,BufNewFile *.js    set suffixesadd=.js et ts=4 sw=4
 autocmd BufRead,BufNewFile *.d.ts  set noequalalways winfixheight
@@ -48,3 +51,47 @@ let g:tsuquyomi_disable_quickfix = 1
 
 
 set complete-=t
+
+" disable spellcheck in reply lines:
+"syn region reply start="^>" end="$" contains=@NoSpell
+
+function! TsInterfaceAlt()
+    if expand("%:t")[0] == "I"
+        let l:without = expand("%:t")[1:]
+        return expand("%:h") . "/" . l:without
+    else
+        return expand("%:h") . "/I" . expand("%:t")
+    endif
+endfunction
+
+function! TsInterfaceToggle(command)
+    let alt = TsInterfaceAlt()
+
+    execute a:command . " " . l:alt
+endfunction
+
+autocmd FileType typescript
+			\ command! TA call TsInterfaceToggle("edit")
+			\ | command! TAS call TsInterfaceToggle("split")
+			\ | command! TAV call TsInterfaceToggle("vsplit")
+
+"-----------
+
+function JsInterfaceAlt()
+    if expand("%:e:e") == "spec.js"
+        return expand("%:r:r") . ".js"
+    else
+        return expand("%:r") . ".spec.js"
+    endif
+endfunction
+
+function JsSpecToggle(command)
+    let alt = JsSpecAlt()
+    execute a:command . " " . l:alt
+endfunction
+
+autocmd FileType javascript
+			\ command! A call JsSpecToggle("edit")
+			\ | command! AS call JsSpecToggle("split")
+			\ | command! AV call JsSpecToggle("vsplit")
+			\ | command! AT call JsSpecToggle("tabe")
