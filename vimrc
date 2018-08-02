@@ -181,6 +181,9 @@ nmap <leader>a :vert ball<CR>
 " preserve default yank register
 vmap <leader>d "_dP
 
+nmap <silent> <leader>f :let @" = bufname("%")<CR>
+nmap <silent> <leader>F :let @" = expand("%:p")<CR>
+
 " man page auto return
 nmap K K<cr>
 
@@ -201,6 +204,8 @@ nnoremap zc zC | nnoremap zC zc
 nnoremap zo zO | nnoremap zO zo
 nnoremap zm zM | nnoremap zM zm
 nnoremap zr zR | nnoremap zR zr
+
+nnoremap Y y$
 
 " make smartcase apply for * and #
 nnoremap * /\<<C-R><C-W>\><CR>
