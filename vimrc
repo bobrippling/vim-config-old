@@ -110,6 +110,8 @@ set noequalalways
 
 set diffopt+=vertical
 
+tnoremap <C-W><C-W> <C-W>.
+
 "set foldlevelstart=0 " fdm=manual unless we have syntax
 "set foldmethod=syntax
 
