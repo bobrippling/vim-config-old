@@ -110,7 +110,9 @@ set noequalalways
 
 set diffopt+=vertical
 
-tnoremap <C-W><C-W> <C-W>.
+if has('terminal')
+	tnoremap <C-W><C-W> <C-W>.
+endif
 
 "set foldlevelstart=0 " fdm=manual unless we have syntax
 "set foldmethod=syntax
