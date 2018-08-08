@@ -34,3 +34,6 @@
 [submodule "bundle/vim-editqf"]
 	path = bundle/vim-editqf
 	url = git://github.com/jceb/vim-editqf
+[submodule "bundle/textobj-word-column.vim"]
+	path = bundle/textobj-word-column.vim
+	url = git://github.com/coderifous/textobj-word-column.vim
