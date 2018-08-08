@@ -112,6 +112,8 @@ set diffopt+=vertical
 
 if has('terminal')
 	tnoremap <C-W><C-W> <C-W>.
+	tmap <C-W>gt <C-W>:tabnext<CR>
+	tmap <C-W>gT <C-W>:tabprevious<CR>
 endif
 
 "set foldlevelstart=0 " fdm=manual unless we have syntax
